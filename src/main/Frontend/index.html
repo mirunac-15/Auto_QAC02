@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>My first page</title>
+        <link rel ="stylesheet" type="text/css" href="Style.css">
+        <script src="Script.js"></script>
+
+        <style> h1{
+            color :Green;
+            text-align:center;
+
+        }
+        p{ font-family:verdana;
+            font-size: 22px;
+
+        }
+        </style>
+    </head>
+    <body>
+        <h1> Register a new account</h1>
+        <br>
+        </br>
+       <form action ="/submit" method="post">
+        <fieldset>
+        <legend> Personal information </legend>
+        <label id="firstName">First name: </label>
+            <input id="firstNameValue" type="text" maxlength="256"><br>
+        <label>Last name: </label>
+            <input id="lastNameValue" type="text" maxlength="256"><br>
+        <div class="testClass">
+               <label> Email:</label>
+                <input type="email"><br>
+                 <label style ="color:red">USERNAME: </label>
+                 <input type="text"><br>
+                <label>Password: </label>
+                 <input type="password"><br>
+                <label>Confirm password: </label>
+                <input type="password"><br>
+            </div>
+        <label> Select Gender:</label>
+            <select name="gender">
+                <option value="Male" selected >Male</option>
+                <option value="Female"  >Female</option>
+                <option value="Others"  >Others</option>
+            </select>
+            <br>
+
+        <label> Agree Terms and conditions</label><br>
+        <label>Yes</label>
+        <input type="radio" name ="term"><br>
+        <label>No</label>
+        <input type= "radio" name ="term"><br>
+        <label>Profile photo:</label>
+        <input type = "file"><br>
+        <label>About yourself:</label>
+        <textarea rows ="4" cols="50"></textarea><br>
+
+    </fieldset>
+    <fieldset>
+        <legend> Register</legend>
+        <input type="checkbox ">
+        <label> Subscribe to newsletter</label>
+        <input type ="button" onclick="showAlert()" value="Submit your registration">
+    </fieldset>
+</form>
+<input type="button" onclick="displayFullName()" value = "Show full name">
+<p id="fullName"></p>
+<div>
+    <p> This is my <b> first </b>b> page.
+    I am so <mark>excited</mark> to be <i>able</i> to share it this with you!
+    </p>
+</div>
+<pre> This is
+    new paragraph that i preformatted.</pre>
+    <a href="https://www.google.com" target="_blank"> Google</a>
+</body>
+</html>
