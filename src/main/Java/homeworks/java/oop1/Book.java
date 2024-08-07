@@ -14,39 +14,24 @@ public class Book {
         this.price = price;
     }
 
+    //get
     public String getName() {
         return name;
-    }
-
-    public void setName1(String name) {
-        this.name = name;
     }
 
     public int getYear() {
         return year;
     }
 
-    public void setYear(int year) {
-        this.year = year;
-    }
-
     public Author getAuthor() {
         return author;
-    }
-
-    public void setAuthor(Author author) {
-        this.author = author;
     }
 
     public double getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public String scriecarte() {
+        return ("Book1: " + name + "( " + price + " RON) by " + author.scrieautor() + ", published in the year " + year+".");
     }
-
-
-
-
 }
